@@ -1,0 +1,149 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    background-color: #0074d9;
+    color: white;
+    padding: 10px;
+}
+
+.convert-button {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the select element */
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* Add a custom arrow background and icon */
+    background: url('dropdown-arrow.png') no-repeat right center;
+    background-size: 20px 20px;
+    position: relative; /* Added for pseudo-element positioning */
+
+}
+
+/* Add a side arrow using a pseudo-element */
+select::after {
+    content: "▶"; /* Arrow character */
+    position: absolute;
+    right: 10px; /* Adjust the position as needed */
+    top: 50%; /* Center the arrow vertically */
+    transform: translateY(-50%); /* Center the arrow vertically */
+    color: #0074d9; /* Arrow color */
+    font-weight: bold; /* Arrow style */
+    font-size: 16px; /* Arrow size */
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid #0074d9;
+}
+
+select option {
+    background-color: #fff;
+    color: #333;
+}
+
+select option:hover {
+    background-color: #0074d9;
+    color: #fff;
+}
+
+#tempInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+}
+
+#tempInput::placeholder {
+    color: #ccc;
+}
+
+.convert-button:hover {
+    background-color: #0169c4;
+}
+
+p {
+    color: #333;
+}
+
+div {
+    margin: 20px;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    margin: 5px;
+}
+
+#inputBox {
+    flex: 1;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    width: 50%;
+    background-color: #444;
+    padding: 55px 20px 55px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#fahrenheitOutput, #kelvinOutput {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#fahrenheitOutput:hover, #kelvinOutput:hover {
+    color: #0074d9;
+}
+
+#outputBox {
+    flex: 1;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#labelC {
+    color: #f2f2f2;
+}
+
+#outputBox p {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(208, 207, 207);
+    margin-bottom: 10px;
+}
